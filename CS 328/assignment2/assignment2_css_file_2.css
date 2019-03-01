@@ -1,0 +1,25 @@
+/*CSS assignment 2 form*/
+
+legend{
+	text-shadow: 2px 2px black;
+	color : white;
+	}
+
+body {
+	background-image : url("http://www.burjdubaiskyscraper.com/2009/11/bd2705.JPG" );
+	background-position : center;
+	width : 100%;
+	}
+h1{
+	color : white;
+}
+
+a{
+	position : absolute; 
+	color : white;
+}
+
+lable{
+	color : white;
+	}
+

@@ -1,0 +1,25 @@
+/*CSS assignment 2 form*/
+
+legend{
+	text-shadow: 2px 2px black;
+	color : white;
+	}
+
+body {
+	background-image : url("http://static.dezeen.com/uploads/2015/12/Top-10-skyscrapers-2016_Goldin-Finance-117_P-T_Ecadi_dezeen.jpg" );
+	background-position : center;
+	}
+h1{
+	color : white;
+}
+
+a{
+	position : absolute; 
+	color : white;
+}
+
+lable{
+	color :white;
+	}
+label{
+	color : white;
