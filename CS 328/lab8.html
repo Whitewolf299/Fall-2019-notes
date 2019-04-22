@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+	<head>	
+		<title> House Here </title>
+		<link rel="stylesheet" type="text/css" href="lab4b.css" />
+	</head>
+		<body>	
+		<form action="lab8-response.php" method="post">
+		 <fieldset  style="padding:20px; width:400px">
+			<h1 class="shadow"> General Problems Auto Insurance Claim Form</h1>
+		   <label> First Name </label>
+			<input name="fname" type="text" size="15" maxlength="15"><br><br>
+		   <label> Last Name </label>
+			<input name="lname" type="text" size="15" maxlength="15"><br><br>
+		   <label> Email </label>
+			<input name="email" type="email" size="15" maxlength="15"><br><br>
+		   <label> Tel. Number </label>
+			<input name="fone" type="tel" size="15" maxlength="15"><br><br>		   
+		   <label> Please identify your gender</label> <br><br>
+		    <input name="gender" type="radio" value="Male"> Male<br>
+		    <input name="gender" type="radio" value="Female"> Female<br><br>
+		   <label> Please indicate the nature of your damage done to your vehicle</label> <br><br>
+		<table style="width: 120%">
+		   <tr>
+		    <td><input name="damage1" type="checkbox" value="Body damage"/>Body damage</td>
+		    <td><input name="damage2" type="checkbox" value="Bumper damage"/>Bumper damage</td>
+		   </tr>
+		   <tr>
+		     <td><input name="damage3" type="checkbox" value="Interior damage"/>Interior damage</td>
+		     <td><input name="damage4" type="checkbox" value="Windscreen damage"/>Windscreen damage</td>
+		   </tr>
+		   <tr>
+		    <td><input name="damage5" type="checkbox" value="Engine damage"/>Engine damage</td>
+		    <td><input name="damage6" type="checkbox" value="Tire damage"/>Tire damage</td>
+	           </tr>
+		   </table><br><br>
+		   <label> Please write in full detail the befinning of the incident to the end</label><br>
+			<textarea name="notes" cols="100" rows="10" placeholder="Enter text here..."></textarea><br><br>		  	   	   <label> Choose the type of insurance coverage you would like to have</label> <br><br>
+			<select name=coverage>
+				<option value="No Coverage">------</option>
+				<option value="Full Premium">Full Premium</option>
+				<option value="Full Coverage">Full Coverage</option>
+				<option value="Partial Coverage">Partial Coverage</option>
+				<option value="Minimum Coverage">Minimum Coverage</option>
+				<option value="No Coverage">No Coverage</option>
+			</select><br><br>
+			<input type="submit" onclick="Successfully submitted" value="Submit">
+			<input type="reset">
+		 </fieldset>
+		</form>
+	</body>
+</html>
