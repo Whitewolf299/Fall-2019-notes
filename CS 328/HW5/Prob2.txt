@@ -1,0 +1,116 @@
+function start()
+{
+	var contents2 = '<h1>Are you a Space person???</h1>' +
+      '<form name="form" action = "#">' +
+	  '<fieldset  style="padding:20px; width:800px">' +
+         '<label>1. How many star in sky? </label><br>' +
+			'<input type="radio" id="q1a1" name="numStar" value="one"> One star<br>' +
+			'<input type="radio" id="q1a2" name="numStar" value="two"> Two star<br>' +
+			'<input type="radio" id="q1a3" name="numStar" value="seven star"> Like 7 star<br>' +
+			'<input type="radio" id="q1a4" name="numStar" value="idk"> I do not know :(<br> <br>' +
+		'<label>2. Select the most warm: </label><br>' +
+			'<input type="radio" id="q2a1" name="warmest" value="oven"> The oven<br>' +
+			'<input type="radio" id="q2a2" name="warmest" value="you"> You( ͡° ͜ʖ ͡°)<br>' +
+			'<input type="radio" id="q2a3" name="warmest" value="toaster"> My toaster<br>' +
+			'<input type="radio" id="q2a4" name="warmest" value="sun"> The sun<br> <br>' +
+		'<label>3. Where is the center of the Milky Way Galaxy?: </label><br>' +
+			'<input type="radio" id="q3a1" name="center" value="correct"> It is 8,122 ± 31 parsecs (26,490 ± 100 ly) away from Earth in the direction of the constellations Sagittarius, Ophiuchus, and Scorpius where the Milky Way appears brightest.<br>' +
+			'<input type="radio" id="q3a2" name="center" value="park"> At the park, under the swingset<br>' +
+			'<input type="radio" id="q3a3" name="center" value="jerry"> Down the street from Jerry\'\s house<br>' +
+			'<input type="radio" id="q3a4" name="center" value="up"> Up.<br> <br>' +
+		'<label>4. If a tree falls in space and no one is around to hear it, does it make a sound? </label><br>' +
+			'<input type="radio" id="q4a1" name="tree" value="yes"> Yes<br>' +
+			'<input type="radio" id="q4a2" name="tree" value="no"> No<br>' +
+			'<input type="radio" id="q4a3" name="tree" value="wat"> wat<br><br>' +
+			'<p>Enter true or false for the following: </p>' +
+		'<label>5. I am made of atoms which compose all matter, therefore I [am] matter.</label><br>' +
+			'<input type="radio" id="q5a1" name="matter" value="t"> True<br>' +
+			'<input type="radio" id="q5a2" name="matter" value="f"> False<br><br>' +
+		'<label>6. The Earth is flat, despite all scientific evidence disproving this, because I read it on the internet. </label><br>' +
+			'<input type="radio" id="q6a1" name="flat" value="t"> True<br>' +
+			'<input type="radio" id="q6a2" name="flat" value="f"> False<br><br>' +
+		'<label>7. Fill in the blank: </label><br>' +
+			'<p> The universe is approximately <input type="text" id="q7a1" name="years" placeholder="Enter answer here..."> years old.</p>' +
+			'<br>' +
+            '<input id = "submitButton" onClick="validateForm()" type="button" value="Submit">' +
+			'</fieldset>' +
+      '</form>';
+
+	document.getElementById("quiz").innerHTML = contents2;
+	
+}
+
+window.onload = function(){start();}; 
+
+function validateForm()
+{
+	var multipleChoice1 = document.forms["form"]["numStar"].value;
+	var multipleChoice2 = document.forms["form"]["warmest"].value;
+	var multipleChoice3 = document.forms["form"]["center"].value;
+	var multipleChoice4 = document.forms["form"]["tree"].value;
+	var trueFalse1 = document.forms["form"]["matter"].value;
+	var trueFalse2 = document.forms["form"]["flat"].value;
+	var fillIn = document.forms["form"]["years"].value;
+	
+	
+	if(multipleChoice1 == "" || multipleChoice2 == "" || multipleChoice3 == "" || multipleChoice4 == "" || trueFalse1 == "" || trueFalse2 == "" || fillIn == "")
+	{
+		alert("Please complete the quiz");
+	}
+	else
+	{
+		gradeQuiz(multipleChoice1, multipleChoice2, multipleChoice3, multipleChoice4, trueFalse1, trueFalse2, fillIn);
+	}
+
+	
+}
+
+function gradeQuiz(ans1, ans2, ans3, ans4, ans5, ans6, ans7)
+{
+	var score = 0;
+	
+	if(ans1 == "seven star")
+		score++;
+	
+	if(ans2 == "sun")
+		score++;
+	
+	if(ans3 == "correct")
+		score++;
+	
+	if(ans4 == "wat")
+		score++;
+	
+	if(ans5 == "t")
+		score++;
+	
+	if(ans6 == "f")
+		score++;
+	
+	if(ans7 == "13.51 billion" || ans7 == "13.51 Billion" || ans7 == "13.51 BILLION" || ans7 == "13,510,000,000" || ans7 == "13.51 x 10^9" || ans7 == "13510000000")
+		score++;
+	
+	if(ans7 == "14 billion" || ans7 == "14 Billion" || ans7 == "14 BILLION" || ans7 == "14,000,000,000" || ans7 == "14 x 10^9" || ans7 == "14000000000")
+		score++;
+	
+	if(score >= 6)
+	{
+		document.getElementById("quiz").innerHTML = "<h1> Quiz Graded </h1>" + "<p> Congration! You done it! Your grade is: " + score 
+			+ "/7 You are definitely a space person :)</p>" + '<input id = "retryButton" onClick="start()" type="button" value="Retry">';
+	}
+	else if(score == 5)
+	{
+		document.getElementById("quiz").innerHTML = "<h1> Quiz Graded </h1>" + "<p> Your grade is: " + score 
+			+ "/7 You are barely a space person :/</p>" + '<input id = "retryButton" onClick="start()" type="button" value="Retry">';
+	}
+	else
+	{
+		document.getElementById("quiz").innerHTML = "<h1> Quiz Graded </h1>" + "<p> Phony! Your grade is: " + score 
+			+ "/7 You are not a space person >:( </p>" + '<input id = "retryButton" onClick="start()" type="button" value="Retry">';
+	}
+}
+
+
+
+
+

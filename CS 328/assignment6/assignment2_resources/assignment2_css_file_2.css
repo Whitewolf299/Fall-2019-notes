@@ -6,8 +6,9 @@ legend{
 	}
 
 body {
-	background-image : url("http://static.dezeen.com/uploads/2015/12/Top-10-skyscrapers-2016_Goldin-Finance-117_P-T_Ecadi_dezeen.jpg" );
+	background-image : url("http://www.burjdubaiskyscraper.com/2009/11/bd2705.JPG" );
 	background-position : center;
+	width : 100%;
 	}
 h1{
 	color : white;
@@ -18,9 +19,7 @@ a{
 	color : white;
 }
 
-lable{
-	color :white;
+label{
+	color : white;
 	}
-form{
-	color : gray;
-}
+

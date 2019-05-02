@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html> 
+
+	<head>
+	<script>
+		document.getElementById("").addEventListener("click", WordMaker);
+		
+		function WordMaker()
+		{
+		
+		
+			var all_words = "";
+		
+			var word = document.getElementById("letters").internalHTML;
+			
+		
+			for(var i = 0; i < 4; i++)
+			{
+				for(var j = (i + 1); j < 4 ; j++)
+				{
+					for(var x = (i + 2); x < 4; x++)
+					{
+					all_words = all_words + word[i] + word[j] + word[x]; 
+					}	
+				}
+		
+			}
+			document.getElementById("demo").innerHTML = 5 + 6;
+		
+		}
+		</script>
+	</head>
+	
+	<body>	
+	
+		<h2>Please enter five letters.</h2>
+		<input type="text" id="letters" ></input>
+		<button onclick="WordMaker()" id="ent">Enter</button>
+		<p id="wrds"></p>
+	
+		
+	</body>
+
+
+</html>
