@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+	<title>Architect Page</title>
+	
+	
+	    <meta charset="utf-8" />
+
+	    <link href=
+        "http://nrs-projects.humboldt.edu/~st10/styles/normalize.css"
+        type="text/css" rel="stylesheet" />
+		
+		<link href="assignment2_css_file.css" 
+		rel="stylesheet" type="text/css" >
+
+    <link href="try-oracle.css" type="text/css"   
+          rel="stylesheet" />
+	
+	</head>
+	
+	<body>
+		<h1><center>Architect's/Sellers' Page</center></h1>
+	<a href = 
+	"http://nrs-projects.humboldt.edu/~sjb747/Assignment2/assignment2_Buyer's_page.html">
+	Buyer's Page</a>
+	<br>
+	<a href="">Sign In As F.O.L.I.C.</a>
+	
+	
+	<center>
+	<form method="post" 
+          action="http://nrs-projects.humboldt.edu/~sjb747/328hw6/architect_pg.php">
+	
+	<fieldset  style="padding:20px; width:400px; border-width : 5px; background-color:  #0e1b5c; border-color : white">
+		  <legend>Personal Information</legend>
+		   <label>First Name</label>
+ 		    <input id = "fname" type = "text" size = "30" maxlength = "20"><br/><br/>
+		  	
+			<label>Last Name</label>
+			<input id = "lname" type = "text" size = "30" maxlength = "20"><br/><br/>
+			
+			<label>Email</label>
+			<input id = "email" type = "text" size = "30" maxlength = "30"><br/><br/>
+			
+			<legend>Any Additional Personal Information</legend>
+			<textarea id = "notes" rows="6" cols="45" placeholder="Enter anything else relevent here!"></textarea>
+
+			<h2 style="color : white">Building Specs</h2>
+			
+			<label>Building Adress</label>
+			<input id = "adress" type = "text" size = "20" maxlength = "50"><br/><br/>
+			
+			<label>Building height(in stories)</label>
+			<input id = "height" type = "number" size = "10" maxlength = "5"><br/><br/>
+			
+			<label>Number of Rooms</label>	
+			<input id = "numrms" type = "number" size = "15" maxlength = "5"><br/><br/> 			
+			
+			<label>Possible Price Range</label>
+				<select id="parish">
+					<option value="default">--------</option>
+					<option value="10-99">10,000 - 99,000</option>
+					<option value="100-249">100,000 - 249,000</option>
+					<option value="250-499">250,000 - 499,000</option>
+					<option value="500+">500,000+</option>
+				</select><br/><br/>
+		
+			<label>Building's Name</label>
+			<input id ="bname" type = "text" size = "25" maxlength="20"><br/><br/> 
+			
+				<div class="submit">
+					<input type="submit"/>
+					<input type="reset"/>
+				</div>
+			</fieldset>
+			</form>
+			</center>
+
+
+	</body>
+</html>

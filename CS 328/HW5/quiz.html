@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+
+
+<html>
+   <head>
+   <meta charset = "utf-8">
+      <title>Gamer test</title>
+      <script  type="text/javascript" src="Prob2.js"></script>
+	  
+	  
+	  <style>
+	  form{
+	  background-image : url("https://www.bing.com/th?id=OIP.bEjNJkDEHThx3-WJUEWH-AHaEK&w=300&h=168&c=7&o=5&cb=10&dpr=1.25&pid=1.7");
+	  width : 765px;
+	  }
+	  fieldset{
+	  color : white;
+	  
+	  }
+	  div{
+	  background-color : black;
+	  width : 500px;
+	  }
+	  
+	  </style>
+   </head>
+   
+   <body background = "http://1.bp.blogspot.com/-IMx4lvGySw8/Tiww3yCzzQI/AAAAAAAAEYQ/jVfYHty2MJM/s1600/NESBoxart.JPG">
+<h1>Are you a true gamer?(kinda a nentendo quiz)</h1> 
+      <form action = "quizphp.php" method = "post" name = "input" > 
+	 <div style="background">
+	 <fieldset  style=" width:700px; padding:30px;"> 
+	     <label> UserName: 
+   <input type="username" id="usrnm" name="username"/></label><br>
+   <label>Password: 
+   <input type="password" id="paswrd" name="password"/></label><br>
+		<label> Name:<input type="text" id = "name" name ="name"></label><br><br>  
+        <label>1. What game had the first ever easter egg? </label><br> 
+			<input type="radio" id="q1a1" name="firstGame" value="HaloReach"> Halo Reach<br> 
+			<input type="radio" id="q1a2" name="firstGame" value="CrashBandicoot"> Crash Bandicoot<br> 
+			<input type="radio" id="q1a3" name="firstGame" value="ShotgunFarmers"> Shotgun Farmers<br> 
+			<input type="radio" id="q1a4" name="firstGame" value="Atari Adventure"> Atari Adventure <br> <br> 
+		<label>2. Who created Mario : </label><br> 
+			<input type="radio" id="q2a1" name="mostTime" value="The Dude"> The Dude<br> 
+			<input type="radio" id="q2a2" name="mostTime" value="Shigeru Miyamoto">Shigeru Miyamoto<br> 
+			<input type="radio" id="q2a3" name="mostTime" value="Barak Obama"> Barak Obama<br> 
+			<input type="radio" id="q2a4" name="mostTime" value="MyUnclewhoworksforNintendo"> My Uncle who works for Nintendo<br> <br> 
+		<label>3. What is the Konami Code? : </label><br> 
+			<input type="radio" id="q3a1" name="whatsNew" value="correct"> UP UP DOWN DOWN LEFT RIGHT LEFT RIGHT A A B A START .<br> 
+			<input type="radio" id="q3a2" name="whatsNew" value="incorrect"> UP UP UP LEFT DOWN DOWN DOWN LEFT UP UP UP LEFT RIGHT<br> 
+			<input type="radio" id="q3a3" name="whatsNew" value="incorrect"> Hold down until it blue screens<br> 
+			<input type="radio" id="q3a4" name="whatsNew" value="incorrect"> Up.<br> <br> 
+		<label>4. From what game is Master Chief from? </label><br> 
+			<input type="radio" id="q4a1" name="chief" value="Halo"> Halo<br> 
+			<input type="radio" id="q4a2" name="chief" value="Mario"> Mario<br> 
+			<input type="radio" id="q4a3" name="chief" value="SuperSmashBros"> Super Smash Bros.<br><br> 
+		<label>5. What is the Nintendo game "Duck Hunt" about.</label><br> 
+			<input type="radio" id="q5a1" name="duckHunt" value="Hunting Ducks"> Hunting Ducks<br> 
+			<input type="radio" id="q5a2" name="duckHunt" value="NOTHuntngDucks"> NOT Huntng Ducks<br><br> 
+		<label>6. Who is green mario? </label><br> 
+			<input type="radio" id="q6a1" name="greenMario" value="JackSepticEye"> JackSepticEye<br> 
+			<input type="radio" id="q6a2" name="greenMario" value="Luigie"> Luigie<br> 
+			<input type="radio" id="q6a3" name="greenMario" value="Bowser"> Bowser<br><br> 
+		
+		<label>7. Fill in the blank: </label><br> 
+		<p> What is your favorite game : <input type="text" id="q7a1" name="favorite" placeholder="Enter answer here..."></p> 
+		<br>
+		<input type = "submit" value = "submit">
+		<input type = "reset" value = "reset">
+		<p id = "result"></p>
+			</fieldset>
+		</div>
+      </form>
+	  </body>
+	  </html>

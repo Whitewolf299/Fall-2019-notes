@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<!--
+Will Kennedy 
+5/7/19
+hw 6
+-->
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>my Quiz</title>
+	  <link href="buyers.css" rel="stylesheet" />
+	  <script type="text/javascript" src="hw5b.js"></script> 
+      
+   </head>
+   <body>
+   
+</video>
+<iframe width="100" height="100" src="https://www.youtube.com/embed/vXjovREd_K0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <div class="wrapper">
+   <div class="form_outline">
+   <h1> My Quiz </h1>
+		<form id = "input" action = "quizphp.php" method = "post" name = "input">
+		<label>Username:</label>
+		<input type="text" name="username"><br>
+		<br>
+		<label>Password:</label>
+		<input type="password" name="password"><br>
+		<div class="linething">
+		<p><br></p>
+		</div>
+		<p>1) Which bird is non-migratory?</p>
+		<input id = "q1" name = "q1" type = "radio" value = "aswallow">African Swallow<br>
+		<input id = "q" name = "q1" type = "radio" value = "atern">Arctic Tern<br>
+		<input id = "q" name = "q1" type = "radio" value = "cgoose">Canadian Goose<br>
+		
+		<p>2) Select the Largest Country</p>
+		<input id = "q" name = "q2" type = "radio" value = "canada">Canada<br>
+		<input id = "q2" name = "q2" type = "radio" value = "russia">Russia<br>
+		<input id = "q" name = "q2" type = "radio" value = "usa">USA<br>
+		
+		<p>3) Which country is not in Africa?</p>
+		<input id = "q" name = "q3" type = "radio" value = "tunisia">Tunisia<br>
+		<input id = "q" name = "q3" type = "radio" value = "egypt">Egypt<br>
+		<input id = "q3" name = "q3" type = "radio" value = "andorra">Andorra<br>
+		
+		<p>4) The official language of Brazil is Spanish.</p>
+		<input id = "q" name = "q4" type = "radio" value = "true">True<br>
+		<input id = "q4" name = "q4" type = "radio" value = "false">False<br>
+		
+		<p>5) Ireland has 32 counties.</p>
+		<input id = "q5" name = "q5" type = "radio" value = "true">True<br>
+		<input id = "q" name = "q5" type = "radio" value = "false">False<br>
+		
+		<p>6) ______ is the largest city in Europe</p>
+		<input id = "q6" name = "q6" type = "text"><br>
+		
+		<br>
+		<input  type = "submit" value = "submit">
+		<input type = "reset" value = "reset">
+		<p id = "result"></p>
+		</div>
+		</div>
+	    <input id = "score" name = "score" type = "number" class="invis">
+		</form>
+   </body>
+</html>
