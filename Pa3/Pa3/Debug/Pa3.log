@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\sylva\desktop\my_github(whitewolf299)\algorithms-code\pa3\pa3\main.cpp(17): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\sylva\desktop\my_github(whitewolf299)\algorithms-code\pa3\pa3\csvparser.h(174): warning C4018: '<=': signed/unsigned mismatch
+c:\users\sylva\desktop\my_github(whitewolf299)\algorithms-code\pa3\pa3\main.cpp(105): warning C4018: '<': signed/unsigned mismatch
+  Pa3.vcxproj -> C:\Users\sylva\Desktop\my_github(Whitewolf299)\Algorithms-code\Pa3\Debug\Pa3.exe
